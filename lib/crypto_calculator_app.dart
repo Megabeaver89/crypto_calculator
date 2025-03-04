@@ -15,7 +15,7 @@ class CryptoCalculatorApp extends StatelessWidget {
       //   '/': (context) => const MainPage(title: '',),
       //   '/settings': (context) => const SettingsPage(),
       // },
-      home: const MainPage(),
+      home: MainPage(),
     );
   }
 }

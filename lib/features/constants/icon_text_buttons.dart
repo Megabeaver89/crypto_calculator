@@ -13,3 +13,8 @@ final List<IconTextButton> mainPagebuttons = [
   IconTextButton(
       icon: Icons.settings_outlined, text: 'Настройки', onPressed: () {}),
 ];
+
+final List<IconTextButton> settingsPageButtons = [
+  IconTextButton(
+      icon: Icons.brightness_6, text: 'Изменить тему', onPressed: () {}),
+];

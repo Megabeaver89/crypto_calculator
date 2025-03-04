@@ -7,7 +7,7 @@ final backGroundColorDarkTheme = Colors.black87;
 final darkTheme = ThemeData(
   colorScheme: ColorScheme.dark(primary: mainColorDarkTheme),
   appBarTheme: AppBarTheme(
-      backgroundColor: backGroundColorDarkTheme,
+      backgroundColor: mainColorDarkTheme,
       centerTitle: true,
       titleTextStyle: TextStyle(color: Colors.black, fontSize: 25)),
   scaffoldBackgroundColor: Colors.black,

@@ -3,17 +3,16 @@ import 'package:crypto_calculator/core/base_page.dart';
 import 'package:crypto_calculator/features/constants/icon_text_buttons.dart';
 import 'package:flutter/material.dart';
 
-class MainPage extends BasePage {
-  const MainPage({super.key}) : super(title: 'Crypto Calculator');
+class SetttingsPage extends BasePage {
+  const SetttingsPage({super.key}) : super(title: 'Settings');
 
   @override
-  BasePageState<MainPage> createState() => _MainPageState();
+  BasePageState<SetttingsPage> createState() => _SetttingsPageState();
 }
 
-class _MainPageState extends BasePageState<MainPage> {
+class _SetttingsPageState extends BasePageState<SetttingsPage> {
   @override
   Widget buildBody(BuildContext context) {
-    return SafeArea(
-        child: GridViewIconButtons(listIconTextButtons: mainPagebuttons));
+    return GridViewIconButtons(listIconTextButtons: settingsPageButtons);
   }
 }
