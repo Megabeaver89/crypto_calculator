@@ -1,4 +1,4 @@
-import 'package:crypto_calculator/features/main_page/widgets/widgets.dart';
+import 'package:crypto_calculator/features/constants/main_page_buttons.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
@@ -19,14 +19,13 @@ class _MainPageState extends State<MainPage> {
         ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Row(
-            children: <Widget>[
-              IconTextButton(
-                  icon: Icons.wallet_outlined,
-                  text: 'Кошелек',
-                  onPressed: () {})
-            ],
-          ),
+          child: GridView.builder(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 3),
+              itemCount: mainPagebuttons.length,
+              itemBuilder: (context, index) {
+                return mainPagebuttons[index];
+              }),
         ));
   }
 }
