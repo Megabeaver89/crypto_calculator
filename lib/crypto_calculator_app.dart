@@ -1,4 +1,4 @@
-import 'package:crypto_calculator/features/main_page/view/view.dart';
+import 'package:crypto_calculator/features/main_page/main_page.dart';
 import 'package:crypto_calculator/theme/theme.dart';
 import 'package:flutter/material.dart';
 

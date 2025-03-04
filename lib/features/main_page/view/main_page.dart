@@ -21,7 +21,7 @@ class _MainPageState extends State<MainPage> {
           padding: const EdgeInsets.all(8.0),
           child: GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3),
+                  crossAxisCount: 3, crossAxisSpacing: 10, mainAxisSpacing: 10),
               itemCount: mainPagebuttons.length,
               itemBuilder: (context, index) {
                 return mainPagebuttons[index];

@@ -1,4 +1,4 @@
-import 'package:crypto_calculator/features/main_page/widgets/icon_text_button.dart';
+import 'package:crypto_calculator/common_widgets/icon_text_button.dart';
 import 'package:flutter/material.dart';
 
 final List<IconTextButton> mainPagebuttons = [
