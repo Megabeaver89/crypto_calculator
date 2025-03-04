@@ -1,4 +1,5 @@
 import 'package:crypto_calculator/features/main_page/view/main_page.dart';
+import 'package:crypto_calculator/features/settings_page/settings_page.dart';
 import 'package:crypto_calculator/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -11,11 +12,10 @@ class CryptoCalculatorApp extends StatelessWidget {
       title: 'Crypto Calculator App',
       debugShowCheckedModeBanner: false,
       theme: darkTheme,
-      // router: {
-      //   '/': (context) => const MainPage(title: '',),
-      //   '/settings': (context) => const SettingsPage(),
-      // },
-      home: MainPage(),
+      routes: {
+        '/': (context) => const MainPage(),
+        '/settings': (context) => const SetttingsPage(),
+      },
     );
   }
 }

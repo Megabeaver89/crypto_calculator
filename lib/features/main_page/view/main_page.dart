@@ -13,7 +13,7 @@ class MainPage extends BasePage {
 class _MainPageState extends BasePageState<MainPage> {
   @override
   Widget buildBody(BuildContext context) {
-    return SafeArea(
-        child: GridViewIconButtons(listIconTextButtons: mainPagebuttons));
+    final mainPageButtons = getMainPageButtons(context);
+    return GridViewIconButtons(listIconTextButtons: mainPageButtons);
   }
 }

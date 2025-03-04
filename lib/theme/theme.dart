@@ -17,7 +17,7 @@ final darkTheme = ThemeData(
           color: mainColorDarkTheme, fontSize: 20, fontWeight: FontWeight.w500),
       labelMedium: TextStyle(
           color: secondaryColorDarkTheme,
-          fontSize: 16,
+          fontSize: 14,
           fontWeight: FontWeight.w700),
       labelSmall: TextStyle(
           color: secondaryColorDarkTheme,

@@ -15,27 +15,28 @@ class IconTextButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: 100,
-      height: 100,
       child: InkWell(
         onTap: onPressed,
         borderRadius: BorderRadius.circular(10),
-        child: Padding(
-          padding: const EdgeInsets.all(10),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                icon,
-                size: 50,
-                color: Colors.amber,
-              ),
-              const SizedBox(height: 5),
-              Text(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              icon,
+              size: 50,
+              color: Colors.amber,
+            ),
+            const SizedBox(height: 5),
+            Expanded(
+              child: Text(
                 text,
                 style: Theme.of(context).textTheme.labelMedium,
-              )
-            ],
-          ),
+                textAlign: TextAlign.center,
+                overflow: TextOverflow.ellipsis,
+              ),
+            )
+          ],
         ),
       ),
     );

@@ -17,7 +17,7 @@ abstract class BasePageState<T extends BasePage> extends State<T> {
         ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: buildBody(context),
+          child: SafeArea(child: buildBody(context)),
         ));
   }
 

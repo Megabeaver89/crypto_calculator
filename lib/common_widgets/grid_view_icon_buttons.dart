@@ -9,7 +9,7 @@ class GridViewIconButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.builder(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3, crossAxisSpacing: 10, mainAxisSpacing: 10),
+            crossAxisCount: 3, crossAxisSpacing: 10, mainAxisSpacing: 0),
         itemCount: listIconTextButtons.length,
         itemBuilder: (context, index) {
           return listIconTextButtons[index];
