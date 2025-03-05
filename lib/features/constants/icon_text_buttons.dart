@@ -22,7 +22,14 @@ List<IconTextButton> getMainPageButtons(BuildContext context) {
   ];
 }
 
-final List<IconTextButton> settingsPageButtons = [
-  IconTextButton(
-      icon: Icons.brightness_6, text: changeThemeText, onPressed: () {}),
-];
+List<IconTextButton> getSettingsPageButtons(BuildContext context) {
+  return [
+    IconTextButton(
+        icon: Icons.brightness_6,
+        text: themeText,
+        onPressed: () {
+          Navigator.of(context).pushNamed(themeRoute);
+        }),
+    IconTextButton(icon: Icons.language, text: languageText, onPressed: () {}),
+  ];
+}

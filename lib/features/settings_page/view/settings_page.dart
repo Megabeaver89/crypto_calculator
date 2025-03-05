@@ -13,6 +13,7 @@ class SetttingsPage extends BasePage {
 class _SetttingsPageState extends BasePageState<SetttingsPage> {
   @override
   Widget buildBody(BuildContext context) {
+    final settingsPageButtons = getSettingsPageButtons(context);
     return GridViewIconButtons(listIconTextButtons: settingsPageButtons);
   }
 }

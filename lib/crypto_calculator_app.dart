@@ -1,6 +1,7 @@
 import 'package:crypto_calculator/features/constants/routes.dart';
 import 'package:crypto_calculator/features/main_page/view/main_page.dart';
 import 'package:crypto_calculator/features/settings_page/settings_page.dart';
+import 'package:crypto_calculator/features/theme_switcher_page/theme_switcher_page.dart';
 import 'package:crypto_calculator/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,7 @@ class CryptoCalculatorApp extends StatelessWidget {
       routes: {
         homeRoute: (context) => const MainPage(),
         settingsRoute: (context) => const SetttingsPage(),
+        themeRoute: (context) => const ThemeSwitcherPage(),
       },
     );
   }
