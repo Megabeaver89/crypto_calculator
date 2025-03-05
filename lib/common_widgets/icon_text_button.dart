@@ -13,6 +13,7 @@ class IconTextButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return SizedBox(
       width: 100,
       child: InkWell(
@@ -25,13 +26,13 @@ class IconTextButton extends StatelessWidget {
             Icon(
               icon,
               size: 50,
-              color: Colors.amber,
+              color: theme.iconTheme.color,
             ),
             const SizedBox(height: 5),
             Expanded(
               child: Text(
                 text,
-                style: Theme.of(context).textTheme.labelMedium,
+                style: theme.textTheme.labelMedium,
                 textAlign: TextAlign.center,
                 overflow: TextOverflow.ellipsis,
               ),
