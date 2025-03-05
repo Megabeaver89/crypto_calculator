@@ -1,3 +1,4 @@
+import 'package:crypto_calculator/features/constants/routes.dart';
 import 'package:crypto_calculator/features/main_page/view/main_page.dart';
 import 'package:crypto_calculator/features/settings_page/settings_page.dart';
 import 'package:crypto_calculator/theme/theme.dart';
@@ -13,8 +14,8 @@ class CryptoCalculatorApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: darkTheme,
       routes: {
-        '/': (context) => const MainPage(),
-        '/settings': (context) => const SetttingsPage(),
+        homeRoute: (context) => const MainPage(),
+        settingsRoute: (context) => const SetttingsPage(),
       },
     );
   }

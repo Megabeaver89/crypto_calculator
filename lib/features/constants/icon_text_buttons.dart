@@ -1,4 +1,5 @@
 import 'package:crypto_calculator/common_widgets/icon_text_button.dart';
+import 'package:crypto_calculator/features/constants/routes.dart';
 import 'package:flutter/material.dart';
 
 List<IconTextButton> getMainPageButtons(BuildContext context) {
@@ -15,7 +16,7 @@ List<IconTextButton> getMainPageButtons(BuildContext context) {
         icon: Icons.settings_outlined,
         text: 'Настройки',
         onPressed: () {
-          Navigator.of(context).pushNamed('/settings');
+          Navigator.of(context).pushNamed(settingsRoute);
         }),
   ];
 }
