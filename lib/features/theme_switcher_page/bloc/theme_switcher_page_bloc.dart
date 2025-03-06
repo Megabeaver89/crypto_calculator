@@ -10,7 +10,7 @@ class ThemeSwitcherPageBloc
     extends Bloc<ThemeSwitcherPageEvent, ThemeSwitcherPageState> {
   ThemeSwitcherPageBloc()
       : super(ThemeSwitcherPageState(
-            themeOption: ThemeOption.light, themeData: lightTheme)) {
+            themeOption: ThemeOption.dark, themeData: darkTheme)) {
     on<ThemeSwitcherPageEvent>((event, emit) {
       emit(ThemeSwitcherPageState(
         themeOption: event.themeOption,
