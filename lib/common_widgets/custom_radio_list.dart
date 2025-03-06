@@ -16,10 +16,14 @@ class CustomRadioList<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Column(
         children: options.map((option) {
       return RadioListTile<T>(
-        title: Text(labelBuilder(option)),
+        title: Text(
+          labelBuilder(option),
+          style: theme.textTheme.labelMedium,
+        ),
         value: option,
         groupValue: selectedValue,
         onChanged: (T? value) {
